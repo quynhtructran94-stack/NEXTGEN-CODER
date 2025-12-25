@@ -183,7 +183,7 @@ const QuizPractice: React.FC<QuizPracticeProps> = ({ onBack }) => {
           <div className="text-center animate-in slide-in-from-right duration-500">
             <h2 className="text-5xl font-black mb-4 uppercase tracking-tighter italic text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400">CHỌN CẤP ĐỘ THỬ THÁCH</h2>
             <p className="text-slate-400 mb-12 font-medium">Ngôn ngữ: {selectedLang} • 20 câu hỏi mỗi cấp độ</p>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-16">
               {[1, 2, 3, 4, 5].map(lvl => (
                 <button 
                   key={lvl}
@@ -195,6 +195,13 @@ const QuizPractice: React.FC<QuizPracticeProps> = ({ onBack }) => {
                 </button>
               ))}
             </div>
+
+            <button 
+              onClick={() => { setPhase('lang'); sound.playClick(); }}
+              className="px-12 py-4 rounded-[20px] bg-white/5 text-slate-400 font-black uppercase tracking-[0.2em] border border-white/10 hover:bg-white/10 hover:text-white transition-all active:scale-95"
+            >
+              Quay lại chọn ngôn ngữ
+            </button>
           </div>
         )}
 
