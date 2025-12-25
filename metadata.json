@@ -1,0 +1,8 @@
+{
+  "name": "NextGen Coder",
+  "description": "Nền tảng học lập trình thế hệ mới dành cho học sinh, tích hợp AI và Gamification.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
